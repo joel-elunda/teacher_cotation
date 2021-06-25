@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'student.apps.StudentConfig',
     'teacher.apps.TeacherConfig',
     'user.apps.UserConfig',
+    'cotation.apps.CotationConfig',
     'bootstrap5',
     'django.contrib.admin',
     'django.contrib.auth',
