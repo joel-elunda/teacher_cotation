@@ -19,8 +19,14 @@ from django.views.generic import TemplateView
 from django.conf import settings
 from django.conf.urls.static import static
 
+
 urlpatterns = [
-    path('', TemplateView.as_view(template_name="index.html")),
+    path('', TemplateView.as_view(template_name="index.html"), name='home'),
+    path('contact/', TemplateView.as_view(template_name="contact.html"), name='contact'),
+    path('services/', TemplateView.as_view(template_name="services.html"), name='services'),
+    path('about/', TemplateView.as_view(template_name="about.html"), name='about'),
+    path('works/', TemplateView.as_view(template_name="works.html"), name='works'),
+    
     path('teacher', include('teacher.urls')),
     path('student', include('student.urls')),
     path('cotation', include('cotation.urls')),
